@@ -1,0 +1,22 @@
+Tuning: mean 0.5 s prediction RMSE [m] on tuning set (t>=1 s), best parameter per strategy
+  kf_cv        best 20         tuning RMSE 2.02  (grid 9 pts)
+  kf_ca        best 3          tuning RMSE 1.96  (grid 5 pts)
+  alphabeta    best 0.3        tuning RMSE 2.05  (grid 6 pts)
+  singer       best [5 1]      tuning RMSE 1.79  (grid 9 pts)
+  ekf_cv       best 20         tuning RMSE 2.02  (grid 6 pts)
+  adaptive_cv  best 8          tuning RMSE 2.09  (grid 5 pts)
+  kfca_damped  best [3 0]      tuning RMSE 1.83  (grid 9 pts)
+  imm_cvca     best [2 10]     tuning RMSE 1.39  (grid 9 pts)
+
+Test set (15 trajectories x 100 noise runs, parameters frozen), position RMSE [m], t>=1 s
+strategy     param      filtered  pred(mean)  pred(worst)  loss(mean)  loss(worst)
+kf_cv        20         0.61      2.13        3.91         2.95        7.09       
+kf_ca        3          0.58      1.87        2.94         2.82        6.24       
+alphabeta    0.3        0.64      2.19        3.86         3.17        6.73       
+singer       [5 1]      0.57      1.80        2.92         2.46        6.32       
+ekf_cv       20         0.61      2.13        3.91         2.95        7.09       
+adaptive_cv  8          0.64      2.23        4.73         3.16        8.44       
+kfca_damped  [3 0]      0.58      1.78        3.06         2.55        6.83       
+imm_cvca     [2 10]     0.50      1.51        2.96         2.41        6.68       
+genie_cv     -          0         0.63        1.56         0.68        1.97       
+genie_ca     -          0         0.10        0.27        
